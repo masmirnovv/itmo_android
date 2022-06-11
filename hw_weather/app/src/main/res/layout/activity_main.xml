@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/text.large"
+        android:id="@+id/title"
+        android:text="@string/appTitle"
+        android:textColor="#202820"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="14dp"
+        />
+
+    <TextView
+        style="@style/text.medium"
+        android:id="@+id/switchTheme"
+        android:text="@string/switchTheme"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="14dp"
+        />
+
+    <ImageView
+        style="@style/icon.large"
+        android:id="@+id/currentIc"
+        app:srcCompat="@drawable/ic_sunny"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        style="@style/text.large"
+        android:id="@+id/currentValue"
+        android:text="@string/temperature"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/currentIc"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/forecast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/switchTheme"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="30dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/card"
+            android:id="@+id/forecastMon"
+            >
+
+            <TextView
+                style="@style/text.small"
+                android:id="@+id/monTxt"
+                android:text="@string/monday"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="4dp"
+                />
+
+            <ImageView
+                style="@style/icon.small"
+                android:id="@+id/monIc"
+                app:srcCompat="@drawable/ic_sunny"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/monTxt"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                style="@style/text.small"
+                android:id="@+id/monTemp"
+                android:text="@string/temperature"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/monIc"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/card"
+            android:id="@+id/forecastTue"
+            >
+
+            <TextView
+                style="@style/text.small"
+                android:id="@+id/tueTxt"
+                android:text="@string/tuesday"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="4dp"
+                />
+
+            <ImageView
+                style="@style/icon.small"
+                android:id="@+id/tueIc"
+                app:srcCompat="@drawable/ic_sunny"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tueTxt"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                style="@style/text.small"
+                android:id="@+id/tueTemp"
+                android:text="@string/temperature"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tueIc"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/card"
+            android:id="@+id/forecastWed"
+            >
+
+            <TextView
+                style="@style/text.small"
+                android:id="@+id/wedTxt"
+                android:text="@string/wednesday"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="4dp"
+                />
+
+            <ImageView
+                style="@style/icon.small"
+                android:id="@+id/wedIc"
+                app:srcCompat="@drawable/ic_sunny"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/wedTxt"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                style="@style/text.small"
+                android:id="@+id/wedTemp"
+                android:text="@string/temperature"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/wedIc"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/card"
+            android:id="@+id/forecastThu"
+            >
+
+            <TextView
+                style="@style/text.small"
+                android:id="@+id/thuTxt"
+                android:text="@string/thursday"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="4dp"
+                />
+
+            <ImageView
+                style="@style/icon.small"
+                android:id="@+id/thuIc"
+                app:srcCompat="@drawable/ic_sunny"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/thuTxt"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                style="@style/text.small"
+                android:id="@+id/thuTemp"
+                android:text="@string/temperature"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/thuIc"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/card"
+            android:id="@+id/forecastFri"
+            >
+
+            <TextView
+                style="@style/text.small"
+                android:id="@+id/friTxt"
+                android:text="@string/friday"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="4dp"
+                />
+
+            <ImageView
+                style="@style/icon.small"
+                android:id="@+id/friIc"
+                app:srcCompat="@drawable/ic_sunny"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/friTxt"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                style="@style/text.small"
+                android:id="@+id/friTemp"
+                android:text="@string/temperature"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/friIc"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/current"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/forecast"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="26dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/card"
+            android:id="@+id/wind"
+            >
+
+            <TextView
+                style="@style/text.medium"
+                android:id="@+id/windTxt"
+                android:text="@string/wind"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="4dp"
+                />
+
+            <ImageView
+                style="@style/icon.medium"
+                android:id="@+id/windIc"
+                app:srcCompat="@drawable/ic_wind"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/windTxt"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                style="@style/text.medium"
+                android:id="@+id/windValue"
+                android:text="@string/windValue"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/windIc"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/card"
+            android:id="@+id/humid"
+            >
+
+            <TextView
+                style="@style/text.medium"
+                android:id="@+id/humidTxt"
+                android:text="@string/humidity"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="4dp"
+                />
+
+            <ImageView
+                style="@style/icon.medium"
+                android:id="@+id/humidIc"
+                app:srcCompat="@drawable/ic_humid"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/humidTxt"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                style="@style/text.medium"
+                android:id="@+id/humidValue"
+                android:text="@string/humidValue"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/humidIc"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

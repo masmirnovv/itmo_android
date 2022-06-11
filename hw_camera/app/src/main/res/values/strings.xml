@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">hw_camera</string>
+    <string name="dir_txt">Сохранять в директорию:</string>
+</resources>

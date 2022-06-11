@@ -1,0 +1,66 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">#EAEAFF</item>
+    </style>
+
+    <style name="AppDarkTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">#00574B</item>
+    </style>
+
+
+    <style name="text" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#557055</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="text.large" parent="text">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="text.medium" parent="text">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="text.small" parent="text">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="card">
+        <item name="android:background">#B0B0C0</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="icon">
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <style name="icon.large">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">180dp</item>
+    </style>
+
+    <style name="icon.medium">
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">36dp</item>
+    </style>
+
+    <style name="icon.small">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+</resources>

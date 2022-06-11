@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">hw_contacts</string>
+    <string name="pls_allow_text">Как же хочется простого\nчеловеческого разрешения\nна просмотр контактов…</string>
+    <string name="pls_allow_btn">Разрешить</string>
+    <string name="loaded">Подргужено %1$d контактов</string>
+    <string name="search_hint">Поиск</string>
+    <string name="search_no_contacts">Ничего не найдено</string>
+</resources>
